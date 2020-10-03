@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "eugenio-app-natura",
-    "slug": "eugenio-app-natura",
+    "name": "experience-natura",
+    "slug": "experience-natura",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,6 +23,8 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/Eugenio-Hackathon-Equipe4/front-end"
   }
 }

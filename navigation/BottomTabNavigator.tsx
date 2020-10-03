@@ -17,18 +17,19 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="MeuMapa"
+      initialRouteName="Home"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+
       <BottomTab.Screen
-        name="MeuMapa"
-        component={TabOneNavigator}
+        name="Home"
+        component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="Home"
-        component={TabTwoNavigator}
+        name="MeuMapa"
+        component={TabOneNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
@@ -55,7 +56,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={MapaConsultora}
-        options={{ headerTitle: 'Onde estão os clientes Natura?' }}
+        options={{ headerTitle: 'Onde estão os clientes Natura?', headerShown: false }}
       />
     </TabOneStack.Navigator>
   );
@@ -68,7 +69,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={Home}
-        options={{ headerTitle: 'Home' }}
+        options={{ headerTitle: 'Home', headerShown: false }}
       />
     </TabTwoStack.Navigator>
   );
@@ -81,7 +82,7 @@ function TabThreeNavigator() {
       <TabProductStack.Screen
         name="Produtos"
         component={Perfil}
-        options={{ headerTitle: 'Onde estão os clientes Natura?' }}
+        options={{ headerTitle: 'Catálago de Produtos' }}
       />
     </TabProductStack.Navigator>
   );

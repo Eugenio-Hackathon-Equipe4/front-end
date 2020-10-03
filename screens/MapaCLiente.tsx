@@ -1,12 +1,16 @@
 import * as React from 'react';
+import { StackScreenProps } from '@react-navigation/stack';
+
 import { StyleSheet, Dimensions } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MapView from 'react-native-maps';
 import { Marker } from 'react-native-maps';
-
+import { RootStackParamList } from '../types';
 import { Text, View } from '../components/Themed';
 
-export default function MapaCliente() {
+export default function MapaCliente({
+  navigation,
+}: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Clientes até 2km</Text>
@@ -38,7 +42,7 @@ export default function MapaCliente() {
           description={"Bem estar pra você!"}
         />
       </MapView>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity onPress={() => navigation.replace('Mensagem')} style={styles.button}>
         <Text style={styles.text}>Enviar Mensagem Promocional</Text>
       </TouchableOpacity>
     </View>
@@ -56,7 +60,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 15,
     marginBottom: 10,
-    color: "#6558f5"
+    color: "#ff7c34"
   },
   text: {
     fontSize: 16,
@@ -68,7 +72,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#6558f5',
+    backgroundColor: '#ff7c34',
     margin: 10
   },
   mapStyle: {
