@@ -7,9 +7,8 @@ import Card from '../components/Product';
 export default function Perfil() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Olá Janaina!</Text>
+      <Text style={styles.title}>Veja as principais promoções!</Text>
       <Card title={"Perfil"} />
-
     </View>
   );
 }

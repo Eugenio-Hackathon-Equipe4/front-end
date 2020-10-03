@@ -9,6 +9,11 @@ import BottomTabNavigator from './BottomTabNavigator';
 import ClientTabNavigator from './ClientNavigator';
 
 import Login from '../screens/Login';
+import Cadastrar from '../screens/Cadastrar';
+import Formulario from '../screens/Formulario';
+import Mensagem from '../screens/Mensagem';
+import Perfil from '../screens/Perfil';
+
 
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -26,11 +31,18 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false, headerStyle: { backgroundColor: '#ff7c34' }, headerTitleAlign: 'center', headerTintColor: '#fff' }}>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Login" component={Login} options={{ title: 'Vamos Começar!' }} />
       <Stack.Screen name="Root" component={BottomTabNavigator} />
+      <Stack.Screen name="Cadastrar" component={Cadastrar} />
+
+      <Stack.Screen name="Formulario" component={Formulario} />
+      <Stack.Screen name="FormPerfil" component={Perfil} />
+      <Stack.Screen name="Mensagem" component={Mensagem} />
+
+
       <Stack.Screen name="Client" component={ClientTabNavigator} />
-      <Stack.Screen name="Loja" component={ClientTabNavigator} />
+      <Stack.Screen name="Loja" component={BottomTabNavigator} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

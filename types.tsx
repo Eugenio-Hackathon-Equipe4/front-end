@@ -1,8 +1,12 @@
 export type RootStackParamList = {
   Root: undefined;
+  Cadastrar: undefined;
   Login: undefined;
+  FormPerfil: undefined;
   Client: undefined;
   Loja: undefined;
+  Mensagem: undefined;
+  Formulario: undefined;
   NotFound: undefined;
 };
 

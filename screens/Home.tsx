@@ -20,6 +20,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    paddingTop: 65,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
