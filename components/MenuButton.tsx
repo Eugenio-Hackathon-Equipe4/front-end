@@ -29,12 +29,21 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: "#fff"
   },
-  button: {
+  buttonx: {
     width: 320,
     height: 80,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#6558f5',
+  },
+  button: {
+    width: 320,
+    height: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ff7c34',
+    // marginTop: 15,
+    borderRadius: 4
   },
 
 });

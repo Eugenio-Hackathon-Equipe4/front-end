@@ -17,18 +17,19 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="MeuMapa"
+      initialRouteName="Home"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+
       <BottomTab.Screen
-        name="MapaConsultora"
-        component={TabOneNavigator}
+        name="Home"
+        component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="Home"
-        component={TabTwoNavigator}
+        name="MeuMapa"
+        component={TabOneNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
@@ -48,7 +49,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={MapaConsultora}
-        options={{ headerTitle: 'Encontre sua Consultora' }}
+        options={{ headerTitle: 'Encontre sua Consultora', headerShown: false }}
       />
     </TabOneStack.Navigator>
   );
@@ -72,7 +73,7 @@ function TabThreeNavigator() {
   return (
     <TabProductStack.Navigator>
       <TabProductStack.Screen
-        name="Produtos"
+        name="TabProdutoScreen"
         component={Perfil}
         options={{ headerTitle: 'Onde estão os clientes Natura?' }}
       />

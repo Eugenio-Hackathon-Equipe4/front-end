@@ -17,9 +17,9 @@ export default function LoginScreen({
       <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
         <Text style={styles.linkText}>Sou Cliente</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.replace('Loja')} style={styles.button}>
+      {/* <TouchableOpacity onPress={() => navigation.replace('Loja')} style={styles.button}>
         <Text style={styles.linkText}> Tenho uma Loja</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity onPress={() => navigation.replace('Cadastrar')} style={styles.link}>
         <Text style={styles.linkCadastro}>Quero me cadastrar</Text>
       </TouchableOpacity>
