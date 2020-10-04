@@ -42,11 +42,11 @@ export default function LoginScreen({
           <Text style={styles.linkText}>Continuar como Revendedora</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.replace('FormPerfil')} style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
           <Text style={styles.linkText}>Continuar como Cliente</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.replace('Client')} style={[styles.facebbokbutton, { backgroundColor: 'transparent' }]}>
+        <TouchableOpacity onPress={() => navigation.replace('Cadastrar')} style={[styles.facebbokbutton, { backgroundColor: 'transparent' }]}>
           <Text style={styles.linkCadastro}>Voltar</Text>
         </TouchableOpacity>
       </View>
