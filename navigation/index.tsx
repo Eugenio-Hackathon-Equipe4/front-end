@@ -15,7 +15,9 @@ import Mensagem from '../screens/Mensagem';
 import Empreenda from '../screens/Empreenda';
 import Bemestar from '../screens/Bemestar';
 import Produtos from '../screens/Perfil';
+import Pagamento from '../screens/Pagamento';
 
+import Sacola from '../screens/Sacola';
 
 import FormPerfil from '../screens/FormPerfil';
 
@@ -47,7 +49,8 @@ function RootNavigator() {
       <Stack.Screen name="Bemestar" component={Bemestar} />
 
       <Stack.Screen name="Produtos" component={Produtos} />
-
+      <Stack.Screen name="Sacola" component={Sacola} />
+      <Stack.Screen name="Pagamento" component={Pagamento} />
 
       <Stack.Screen name="Client" component={ClientTabNavigator} />
       <Stack.Screen name="Loja" component={BottomTabNavigator} />

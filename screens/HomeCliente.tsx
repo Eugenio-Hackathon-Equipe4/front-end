@@ -15,17 +15,17 @@ export default function HomeCliente({
     <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
       <SafeAreaView style={styles.container}>
         {/* <Text style={styles.title}>Olá Manuela!</Text> */}
-        <Header title="Olá Jananaina" />
+        <Header title="Olá Janaina" />
         <View>
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+          {/* <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Client')} >
             <Card title={"Perfil"} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')} >
             <Card title={"Agendamentos"} />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Sacola')} >
             <Card title={"Meus Pedidos"} />
           </TouchableOpacity>
 
@@ -57,13 +57,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   button: {
-    width: 250,
+    width: 300,
     height: 70,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#E1AF3C',
     borderRadius: 4,
-    paddingHorizontal: 70,
+    // paddingHorizontal: 70,
     paddingVertical: 40,
     marginVertical: 10,
   },

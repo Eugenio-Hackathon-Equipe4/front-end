@@ -15,7 +15,7 @@ export default function MapaConsultora({
   return (
     <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
       <View style={styles.container}>
-        <Header title="Olá Jananaina" />
+        <Header title="Janaina" />
 
         <Text style={[styles.title, { marginTop: 30 }]}>Estas são as Consultoras e Lojas perto de você</Text>
         {/* <Text style={styles.subtitle}>Toque no circulo para selecionar</Text> */}
@@ -49,11 +49,11 @@ export default function MapaConsultora({
           />
         </MapView>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.navigate('Pagamento')} style={styles.button}>
           <Text style={styles.text}>PROCEDER PARA PAGAMENTO</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.replace('Client')} style={[styles.backbutton]}>
+        <TouchableOpacity onPress={() => navigation.replace('Sacola')} style={[styles.backbutton]}>
           <Text style={[styles.text, { color: '#E1AF3C' }]}>Voltar</Text>
         </TouchableOpacity>
 

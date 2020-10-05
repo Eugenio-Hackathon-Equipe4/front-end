@@ -9,7 +9,10 @@ export type RootStackParamList = {
   Formulario: undefined;
   Empreenda: undefined;
   Produtos: undefined;
+  Sacola: undefined;
   Bemestar: undefined;
+  Pagamento: undefined;
+  MeuMapa: undefined;
   NotFound: undefined;
 };
 

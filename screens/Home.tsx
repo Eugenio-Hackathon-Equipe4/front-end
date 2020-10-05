@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import Card from '../components/MenuButton';
@@ -12,19 +12,36 @@ export default function Home({
   navigation,
 }: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
-    <SafeAreaView style={styles.container}>
-      <Header title="Olá Márcia" />
-      {/* <Text style={styles.title}>Olá Janaina!</Text> */}
-      <Card title={"Perfil"} />
-      <Card title={"Estoque"} />
-      <Card title={"Agendamentos"} />
-      <Card title={"Meus Pedidos"} />
-      <Card title={"Clientes"} />
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Empreenda')} >
-        <Card title={"Empreenda"} />
-      </TouchableOpacity>
+    <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
 
-    </SafeAreaView>
+      <SafeAreaView style={styles.container}>
+        <Header title="Olá Márcia" />
+        {/* <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')} >
+          <Card title={"Perfil"} />
+        </TouchableOpacity> */}
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')} >
+          <Card title={"Estoque"} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Root')} >
+          <Card title={"Agendamentos"} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Root')} >
+          <Card title={"Meus Pedidos"} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('MeuMapa')} >
+          <Card title={"Clientes"} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Empreenda')} >
+          <Card title={"Empreenda"} />
+        </TouchableOpacity>
+
+      </SafeAreaView>
+    </ScrollView>
+
   );
 }
 
@@ -40,11 +57,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   button: {
-    width: 250,
+    width: 300,
     height: 70,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#E1AF3C',
     borderRadius: 4,
+    //paddingHorizontal: 70,
+    paddingVertical: 40,
+    marginVertical: 10,
   },
 });
