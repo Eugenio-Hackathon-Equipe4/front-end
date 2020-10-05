@@ -1,24 +1,53 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import Card from '../components/MenuButton';
+import Header from '../components/Header';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../types';
 
-export default function HomeCliente() {
+export default function HomeCliente({
+  navigation,
+}: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Olá Manuela!</Text>
-      <Card title={"Perfil"} />
-      <Card title={"Agendamentos"} />
-      <Card title={"Meus Pedidos"} />
-      <Card title={"Comprar"} />
-    </View>
+    <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
+      <SafeAreaView style={styles.container}>
+        {/* <Text style={styles.title}>Olá Manuela!</Text> */}
+        <Header title="Olá Jananaina" />
+        <View>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+            <Card title={"Perfil"} />
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+            <Card title={"Agendamentos"} />
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+            <Card title={"Meus Pedidos"} />
+          </TouchableOpacity>
+
+
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')} >
+            <Card title={"Comprar"} />
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Bemestar')} >
+            <Card title={"Bem estar"} />
+          </TouchableOpacity>
+        </View>
+
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    //padding: 20,
+    backgroundColor: '#fff',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -26,5 +55,16 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  button: {
+    width: 250,
+    height: 70,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#E1AF3C',
+    borderRadius: 4,
+    paddingHorizontal: 70,
+    paddingVertical: 40,
+    marginVertical: 10,
   },
 });

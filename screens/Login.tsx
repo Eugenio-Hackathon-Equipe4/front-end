@@ -3,20 +3,23 @@ import * as React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 import { RootStackParamList } from '../types';
+import logo from '../assets/images/logo.png';
 
 export default function LoginScreen({
   navigation,
 }: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
     <View style={styles.container}>
-      <Image style={{ width: 128, height: 84 }} source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }} />
-      <Text style={[styles.title, { marginTop: 30 }]}> Quem é você? </Text>
-      <TouchableOpacity onPress={() => navigation.replace('Root')} style={styles.button}>
-        <Text style={styles.linkText}>Sou Revendedora</Text>
-      </TouchableOpacity>
+      <Image style={{ width: 128, height: 128 }} source={logo} />
+
       <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
-        <Text style={styles.linkText}>Sou Cliente</Text>
+        <Text style={styles.linkText}>Cliente</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.replace('Root')} style={styles.button}>
+        <Text style={styles.linkText}>Consultora</Text>
+      </TouchableOpacity>
+
       {/* <TouchableOpacity onPress={() => navigation.replace('Loja')} style={styles.button}>
         <Text style={styles.linkText}> Tenho uma Loja</Text>
       </TouchableOpacity> */}
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
   },
   linkCadastro: {
     fontSize: 16,
-    color: '#ff7c34',
+    color: '#E1AF3C',
     fontWeight: 'bold',
   },
   button: {
@@ -57,7 +60,7 @@ const styles = StyleSheet.create({
     height: 80,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff7c34',
+    backgroundColor: '#E1AF3C',
     marginTop: 15,
     borderRadius: 10
   },

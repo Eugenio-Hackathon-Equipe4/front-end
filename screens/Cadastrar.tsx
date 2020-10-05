@@ -3,13 +3,16 @@ import * as React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 import { RootStackParamList } from '../types';
+import logo from '../assets/images/logo.png';
 
 export default function LoginScreen({
   navigation,
 }: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
     <View style={styles.container}>
-      <Image style={{ width: 128, height: 84 }} source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }} />
+      {/* <Image style={{ width: 128, height: 84 }} source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }} /> */}
+      <Image style={{ width: 128, height: 128 }} source={logo} />
+
       <Text style={[styles.title, { marginTop: 30 }]}> Escolha uma opção </Text>
       <TouchableOpacity onPress={() => navigation.replace('Root')} style={styles.googlebutton}>
         <Text style={styles.linkText}>Cadastrar com Google</Text>
@@ -50,7 +53,7 @@ const styles = StyleSheet.create({
   },
   linkCadastro: {
     fontSize: 16,
-    color: '#ff7c34',
+    color: '#E1AF3C',
     fontWeight: 'bold',
   },
   button: {
@@ -58,7 +61,7 @@ const styles = StyleSheet.create({
     height: 80,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff7c34',
+    backgroundColor: '#E1AF3C',
     marginTop: 15,
     borderRadius: 10
   },
