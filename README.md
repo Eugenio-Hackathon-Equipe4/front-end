@@ -34,8 +34,8 @@
 
 <p float="left">
   <img src="https://github.com/Eugenio-Hackathon-Equipe4/front-end/blob/master/.github/images/Screenshot_20201005-170901.png" width="200" /> 
+  <img src="https://github.com/Eugenio-Hackathon-Equipe4/front-end/blob/master/.github/images/Screenshot_20201005-170749.png" width="200" />
   <img src="https://github.com/Eugenio-Hackathon-Equipe4/front-end/blob/master/.github/images/Screenshot_20201005-170756.png" width="200" /> 
-   <img src="https://github.com/Eugenio-Hackathon-Equipe4/front-end/blob/master/.github/images/Screenshot_20201005-170749.png" width="200" />
   <img src="https://github.com/Eugenio-Hackathon-Equipe4/front-end/blob/master/.github/images/Screenshot_20201005-170910.png" width="200" /> 
 </p>
 
