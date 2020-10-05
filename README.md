@@ -7,7 +7,7 @@
 
 # :information_source: Sobre
 <p align="justify">
-  O "Nome do App" é um aplicativo, desenvolvido durante o Eugenio Challenge, que dispõe ...
+ Natura UNI é um aplicativo, desenvolvido durante o Eugenio Challenge, que dispõe ...
 </p>
 
 <a name=""></a>
@@ -27,7 +27,7 @@
   <img src="" width="200" />
 </p>
 
-# <a name="saibamais">:cinema: Conheça mais sobre o Nome do App</a>
+# <a name="saibamais">:cinema: Conheça mais sobre o Natura UNI</a>
 
 <table>
  <tr>
@@ -77,7 +77,7 @@
 > **O aplicativo roda tanto em Android, quanto em IOS, porém, os testes foram feitos apenas para Android!**
 > 1. Baixe o aplicativo do Expo em sua loja de aplicativos;
 > 2. Aqui vc pode seguir 2 caminhos:
-> > 1. Acessar o site do [Expo](https://expo.io/@gislainehjessica/experience-natura) referente ao ConnectApp e escanear o QR Code com o aplicativo do Expo ou
+> > 1. Acessar o site do [Expo](https://expo.io/@gislainehjessica/projects/Natura-UNI) referente ao ConnectApp e escanear o QR Code com o aplicativo do Expo ou
 > > 2. Após a [instalação](#instalacao), em seu terminal, você deve executar ```expo start``` e escanear, com o aplicativo do expo, o QR Code exibido no terminal ou na página aberta em seu navegador.
 2. **Acessando o app pelo navegador:**
 > **Esse método não proporciona a mesma experiência que emular o app em um aparelho móvel!**
