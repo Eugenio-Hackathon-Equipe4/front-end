@@ -27,7 +27,7 @@
   <img src="" width="200" />
 </p>
 
-# <a name="saibamais">:cinema: Conheça mais sobre o ConectApp</a>
+# <a name="saibamais">:cinema: Conheça mais sobre o Nome do App</a>
 
 <table>
  <tr>
