@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "experience-natura",
-    "slug": "experience-natura",
+    "name": "Natura-UNI",
+    "slug": "Natura-UNI",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -24,7 +24,7 @@
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
-    "description": "Uma transformação das lojas físicas da Natura em uma experiência única de usuário, através da interação entre você e a marca!",
+    "description": "O Natura UNI transforma a experiência do usuário em algo único e interativo, dentro e fora das lojas físicas.",
     "githubUrl": "https://github.com/Eugenio-Hackathon-Equipe4/front-end"
   }
 }
