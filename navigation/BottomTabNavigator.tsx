@@ -1,4 +1,4 @@
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -24,29 +24,34 @@ export default function BottomTabNavigator() {
         name="Home"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarVisible: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-home" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="MeuMapa"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarVisible: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-map" color={color} />,
         }}
       />
-      <BottomTab.Screen
+      {/* <BottomTab.Screen
         name="Produtos"
         component={TabThreeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <ProductIcon name="shopping-bag" color={color} />,
         }}
-      />
+      /> */}
     </BottomTab.Navigator>
   );
 }
 
 function TabBarIcon(props: { name: string; color: string }) {
   return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
+}
+function ProductIcon(props: { name: string; color: string }) {
+  return <FontAwesome size={30} style={{ marginBottom: -3 }} {...props} />;
 }
 
 const TabOneStack = createStackNavigator<TabOneParamList>();

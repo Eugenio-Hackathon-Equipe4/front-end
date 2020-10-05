@@ -15,7 +15,7 @@ export default function Mensagem({
     <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
 
       <View style={styles.container}>
-        <Header title="Jananaina" />
+        <Header title="Márcia" />
 
         <Text style={[styles.text, { color: '#666', fontSize: 22, textAlign: 'left', marginLeft: 16, marginTop: 40 }]}>
           Alcance mais clientes

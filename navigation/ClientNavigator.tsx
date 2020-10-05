@@ -24,14 +24,16 @@ export default function BottomTabNavigator() {
         name="Home"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarVisible: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="md-home" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="MeuMapa"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarVisible: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="md-map" color={color} />,
         }}
       />
     </BottomTab.Navigator>

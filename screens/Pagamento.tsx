@@ -9,7 +9,7 @@ import { RootStackParamList } from '../types';
 import { Text, View } from '../components/Themed';
 import Header from '../components/Header';
 
-export default function MapaCliente({
+export default function Pagamento({
   navigation,
 }: StackScreenProps<RootStackParamList, 'NotFound'>) {
   return (
@@ -18,40 +18,25 @@ export default function MapaCliente({
       <View style={styles.container}>
         <Header title="Márcia" />
 
-        <Text style={styles.title}>Clientes até 2km</Text>
-        <MapView
-          style={styles.mapStyle}
-          initialRegion={{
-            latitude: -20.3423389,
-            longitude: -40.288469,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
+        <Text style={styles.title}>Qual será a forma de Pagamento? </Text>
+        <View style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          flex: 1,
+          alignItems: 'center',
+          marginBottom: 30
+        }}
         >
-          <Marker
-            key={1}
-            coordinate={{
-              latitude: -20.3423389,
-              longitude: -40.288469,
-            }}
+          <Text style={[styles.title, { marginRight: 20 }]}>Total</Text>
+          <Text style={styles.title}> R$ 87,90 </Text>
+        </View>
 
-            title={"Janaina Gomes"}
-            description={"Adoro novidades!"}
-          />
-          <Marker
-            key={2}
-            coordinate={{
-              latitude: -20.3222,
-              longitude: -40.3381,
-            }}
+        <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
+          <Text style={styles.text}>PAGAR PESSOALMENTE</Text>
+        </TouchableOpacity>
 
-            title={"Luana Beatriz"}
-            description={"Vida agitada, não posso parar!"}
-          />
-        </MapView>
-
-        <TouchableOpacity onPress={() => navigation.replace('Mensagem')} style={styles.button}>
-          <Text style={styles.text}>Notificar</Text>
+        <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
+          <Text style={styles.text}>PAGAR ONLINE</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.replace('Root')} style={[styles.backbutton]}>
