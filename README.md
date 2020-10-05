@@ -3,11 +3,14 @@
 
 | | | | | | | |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[Interface](#interface)|[Saiba Mais](#saibamais)|[Desenvolvimento](#desenvolvimento)|[Instalação](#instalacao)|[Executando a Aplicação](#execucao)|[Tecnologias Utilizadas](#tecnologias)|[Contribuidores](#contribuidores)
+|[Interface](#interface)|[Saiba Mais](#saibamais)|[Instalação](#instalacao)|[Executando a Aplicação](#execucao)|[Tecnologias Utilizadas](#tecnologias)|[Contribuidores](#contribuidores)
 
 # :information_source: Sobre
 <p align="justify">
- Natura UNI é um aplicativo, desenvolvido durante o Eugenio Challenge, que dispõe ...
+ Um problema recorrente na revenda de produtos é alcançar com eficiência a integração entre a consumidora (que procura maior praticidade na hora de adquirir produtos) a consultora (que possui dificuldade em manter a revenda de produtos Natura como sua principal fonte de renda) e as lojas físicas (que possuem um baixo reconhecimento do público, quando comparadas as consultoras).
+
+O Natura UNI chegou para resolver esse problema! Ele é capaz de unir os diversos usuários da marca Natura de forma a entregar uma experiência completa e personalizada!
+
 </p>
 
 <a name=""></a>
@@ -59,17 +62,6 @@
   </td>
 </tr>
 </table>
-
-
-# <a name="desenvolvimento">:white_check_mark: Desenvolvimento</a>
-
-> - [x] Página Inicial
-> - [x] Página de Perfil
-> - [x] Página de Cliente
-> - [x] Página de Produtos
-> - [x] Página de Mapa
-> - [x] Página de Revendedora
-> - [x] Página de Cadastro
 
 
 # <a name="instalacao">:gear: Instalação</a>
