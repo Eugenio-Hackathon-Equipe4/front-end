@@ -12,8 +12,12 @@ import Login from '../screens/Login';
 import Cadastrar from '../screens/Cadastrar';
 import Formulario from '../screens/Formulario';
 import Mensagem from '../screens/Mensagem';
-import Perfil from '../screens/Perfil';
+import Empreenda from '../screens/Empreenda';
+import Bemestar from '../screens/Bemestar';
+import Produtos from '../screens/Perfil';
 
+
+import FormPerfil from '../screens/FormPerfil';
 
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -37,8 +41,12 @@ function RootNavigator() {
       <Stack.Screen name="Cadastrar" component={Cadastrar} />
 
       <Stack.Screen name="Formulario" component={Formulario} />
-      <Stack.Screen name="FormPerfil" component={Perfil} />
+      <Stack.Screen name="FormPerfil" component={FormPerfil} />
       <Stack.Screen name="Mensagem" component={Mensagem} />
+      <Stack.Screen name="Empreenda" component={Empreenda} />
+      <Stack.Screen name="Bemestar" component={Bemestar} />
+
+      <Stack.Screen name="Produtos" component={Produtos} />
 
 
       <Stack.Screen name="Client" component={ClientTabNavigator} />

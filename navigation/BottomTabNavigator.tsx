@@ -82,7 +82,7 @@ function TabThreeNavigator() {
       <TabProductStack.Screen
         name="Produtos"
         component={Perfil}
-        options={{ headerTitle: 'Catálago de Produtos' }}
+        options={{ headerTitle: 'Catálago de Produtos', headerShown: false }}
       />
     </TabProductStack.Navigator>
   );

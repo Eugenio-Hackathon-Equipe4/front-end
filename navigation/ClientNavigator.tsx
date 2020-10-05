@@ -62,7 +62,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={Home}
-        options={{ headerTitle: 'Home' }}
+        options={{ headerTitle: 'Home', headerShown: false }}
       />
     </TabTwoStack.Navigator>
   );
@@ -75,7 +75,7 @@ function TabThreeNavigator() {
       <TabProductStack.Screen
         name="TabProdutoScreen"
         component={Perfil}
-        options={{ headerTitle: 'Onde estão os clientes Natura?' }}
+        options={{ headerTitle: 'Onde estão os clientes Natura?', headerShown: false }}
       />
     </TabProductStack.Navigator>
   );

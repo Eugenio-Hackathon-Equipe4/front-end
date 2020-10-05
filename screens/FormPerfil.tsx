@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   linkCadastro: {
     fontSize: 16,
-    color: '#ff7c34',
+    color: '#E1AF3C',
     fontWeight: 'bold',
   },
   button: {
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff7c34',
+    backgroundColor: '#E1AF3C',
     marginTop: 15,
     borderRadius: 10
   },
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 2,
-    borderColor: '#ff7c34',
+    borderColor: '#E1AF3C',
     backgroundColor: 'transparent',
     marginTop: 15,
     borderRadius: 10

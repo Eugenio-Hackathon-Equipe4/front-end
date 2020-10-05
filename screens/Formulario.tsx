@@ -14,27 +14,27 @@ export default function LoginScreen({
         <Text style={[styles.title, { marginTop: 30 }]}> Dados Pessoais </Text>
 
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="Nome"
         />
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="Sexo"
         />
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="CPF"
         />
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="CEP"
         />
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="Email"
         />
         <TextInput
-          style={{ paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
+          style={{ borderRadius: 10, paddingLeft: 10, width: '100%', height: 60, margin: 8, borderColor: 'gray', borderWidth: 1 }}
           placeholder="Senha"
         />
 
@@ -42,7 +42,7 @@ export default function LoginScreen({
           <Text style={styles.linkText}>Continuar como Revendedora</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.replace('Client')} style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.replace('FormPerfil')} style={styles.button}>
           <Text style={styles.linkText}>Continuar como Cliente</Text>
         </TouchableOpacity>
 
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   linkCadastro: {
     fontSize: 16,
-    color: '#ff7c34',
+    color: '#E1AF3C',
     fontWeight: 'bold',
   },
   button: {
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff7c34',
+    backgroundColor: '#E1AF3C',
     marginTop: 15,
     borderRadius: 10
   },
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     height: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff7c34',
+    backgroundColor: '#E1AF3C',
     marginTop: 15,
     borderRadius: 10
   },

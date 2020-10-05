@@ -1,48 +1,50 @@
-import { StackScreenProps } from '@react-navigation/stack';
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { Text, View } from '../components/Themed';
-import { RootStackParamList } from '../types';
+import logo from '../assets/images/logo.png';
 
 interface Props {
   title: string;
+  image: string;
 }
 
-export default function MenuButton({
-  title
-}: Props) {
+export default function Card({ title, image }: Props) {
   return (
     <View style={styles.container}>
-      {/* <TouchableOpacity style={styles.button} onPress={() => navigation.replace('Empreenda')} > */}
+      <View style={{ borderWidth: 1, borderColor: "#E1AF3C" }}>
+        <Image style={{ width: 128, height: 128 }} source={image} />
+      </View>
+
       <View style={styles.button}>
         <Text style={styles.text}>{title}</Text>
       </View>
-      {/* </TouchableOpacity> */}
-    </View >
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.5,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 16
   },
   text: {
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 14,
+    textAlign: 'center',
     color: "#fff"
   },
   button: {
-    width: 250,
-    height: 70,
+    width: 130,
+    height: 60,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#E1AF3C',
-    borderRadius: 4,
-    paddingHorizontal: 70
+    paddingHorizontal: 8,
+    paddingTop: 8,
+    paddingBottom: 8
   },
 
 });
